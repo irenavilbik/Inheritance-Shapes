@@ -1,19 +1,18 @@
 public class Rectangle extends Shape {
-    double height;
-    double lenght;
+   RectangleSides rectangleSides;
 
     public Rectangle(double height, double lenght) {
-        this.height = height;
-        this.lenght = lenght;
+        this.rectangleSides = new RectangleSides(lenght, height);
+
     }
 
     @Override
     double getArea() {
-        return (height * lenght);
+        return rectangleSides.getArea();
     }
 
     @Override
     double getPerimeter() {
-        return (height + lenght)*2;
+        return rectangleSides.getPerimeter();
     }
 }
