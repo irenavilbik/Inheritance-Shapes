@@ -13,5 +13,4 @@ public class ShapeCalculator {
         System.out.println("Rectangle's area " + s3.getPerimeter());
 
     }
-
 }
